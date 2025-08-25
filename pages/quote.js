@@ -59,12 +59,46 @@ export default function Quote() {
     return (
         <>
             <Head>
-                <title>Get a Free Quote - TyneMove</title>
+                <title>Free Moving Quote | Van Removals Newcastle, Sunderland & Durham | TyneMove</title>
                 <meta
                     name="description"
-                    content="Request a free quote for your move with TyneMove. Reliable van removals across Newcastle, Sunderland, Durham and nearby towns."
+                    content="Get a free moving quote from TyneMove. Affordable van removals in Newcastle, Sunderland, Durham and nearby towns. Safe, reliable and stress-free moving services."
                 />
-                <link rel="icon" href="/favicon.ico" />
+                <meta name="robots" content="index, follow" />
+                <link rel="canonical" href="https://www.tynemove.co.uk/quote" />
+
+                {/* LocalBusiness Schema for SEO */}
+                <script type="application/ld+json" dangerouslySetInnerHTML={{
+                    __html: `
+    {
+      "@context": "https://schema.org",
+      "@type": "MovingCompany",
+      "name": "TyneMove",
+      "url": "https://www.tynemove.co.uk",
+      "logo": "https://www.tynemove.co.uk/img/logo.png",
+      "telephone": "+44 1234 567890",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "12 Argent Street, Peterlee",
+        "addressLocality": "Peterlee",
+        "postalCode": "NE1 1AB",
+        "addressCountry": "UK"
+      },
+      "areaServed": [
+        "Newcastle upon Tyne",
+        "Sunderland",
+        "Durham",
+        "Gateshead",
+        "North Shields",
+        "South Shields",
+        "Peterlee"
+      ],
+      "sameAs": [
+        "https://www.facebook.com/tynemove",
+        "https://www.instagram.com/tynemove"
+      ]
+    }
+  `}} />
             </Head>
 
             <Navbar />
@@ -179,7 +213,7 @@ export default function Quote() {
             </div>
 
             {/* CTA Section */}
-          
+
 
             {/* Footer */}
             <Footer />

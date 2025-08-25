@@ -8,12 +8,59 @@ export default function Contact() {
     return (
         <>
             <Head>
-                <title>Contact Us - TyneMove</title>
+                <title>Contact TyneMove | Van Removals Newcastle, Sunderland & Durham</title>
                 <meta
                     name="description"
-                    content="Get in touch with TyneMove. Call us or send an email for all your moving and delivery needs."
+                    content="Contact TyneMove for reliable and affordable van removals across Newcastle, Sunderland, Durham and nearby towns. Get in touch via phone or email."
                 />
-                <link rel="icon" href="/favicon.ico" />
+                <meta name="robots" content="index, follow" />
+                <link rel="canonical" href="https://www.tynemove.co.uk/contact" />
+
+                {/* LocalBusiness Schema for SEO */}
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{
+                        __html: `
+    {
+      "@context": "https://schema.org",
+      "@type": "MovingCompany",
+      "name": "TyneMove",
+      "url": "https://www.tynemove.co.uk",
+      "logo": "https://www.tynemove.co.uk/img/logo.png",
+      "telephone": "+44 1234 567890",
+      "email": "contact@tynemove.co.uk",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "12 Argent Street, Peterlee",
+        "addressLocality": "Peterlee",
+        "postalCode": "NE1 1AB",
+        "addressCountry": "UK"
+      },
+      "areaServed": [
+        "Newcastle upon Tyne",
+        "Sunderland",
+        "Durham",
+        "Gateshead",
+        "North Shields",
+        "South Shields",
+        "Peterlee",
+        "Washington",
+        "Blyth",
+        "Consett",
+        "Cramlington",
+        "Hebburn",
+        "Jarrow",
+        "Whitley Bay",
+        "Seaham"
+      ],
+      "sameAs": [
+        "https://www.facebook.com/tynemove",
+        "https://www.instagram.com/tynemove"
+      ]
+    }
+  `,
+                    }}
+                />
             </Head>
 
             <Navbar />

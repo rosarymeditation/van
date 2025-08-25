@@ -16,13 +16,60 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>TyneMove - Reliable Van Removals in Newcastle, Sunderland, Durham & Nearby Towns</title>
+        <title>TyneMove | Reliable Van Removals Newcastle, Sunderland & Durham</title>
         <meta
           name="description"
-          content="TyneMove offers professional van removals across Newcastle, Sunderland, Durham and nearby towns. Affordable, safe, and stress-free moving solutions."
+          content="TyneMove provides safe and affordable van removals across Newcastle, Sunderland, Durham and nearby towns. Home, office, or single-item moves handled with care."
         />
-        <link rel="icon" href="/favicon.ico" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://www.tynemove.co.uk/" />
+
+        {/* LocalBusiness Schema for SEO */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: `
+    {
+      "@context": "https://schema.org",
+      "@type": "MovingCompany",
+      "name": "TyneMove",
+      "url": "https://www.tynemove.co.uk",
+      "logo": "https://www.tynemove.co.uk/img/logo.png",
+      "telephone": "+44 1234 567890",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "12 Argent Street, Peterlee",
+        "addressLocality": "Peterlee",
+        "postalCode": "NE1 1AB",
+        "addressCountry": "UK"
+      },
+      "areaServed": [
+        "Newcastle upon Tyne",
+        "Sunderland",
+        "Durham",
+        "Gateshead",
+        "North Shields",
+        "South Shields",
+        "Peterlee",
+        "Washington",
+        "Blyth",
+        "Consett",
+        "Cramlington",
+        "Hebburn",
+        "Jarrow",
+        "Whitley Bay",
+        "Seaham"
+      ],
+      "sameAs": [
+        "https://www.facebook.com/tynemove",
+        "https://www.instagram.com/tynemove"
+      ]
+    }
+  `,
+          }}
+        />
       </Head>
+
 
       <Navbar />
       <Hero />
