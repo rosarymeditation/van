@@ -10,7 +10,6 @@ import Footer from "../components/footer";
 import Testimonials from "../components/testimonials";
 import Cta from "../components/cta";
 import Faq from "../components/faq";
-import PopupWidget from "../components/popupWidget";
 
 export default function Home() {
   return (
@@ -107,7 +106,7 @@ export default function Home() {
 
       <Cta />
       <Footer />
-      <PopupWidget />
+    
     </>
   );
 }

@@ -4,7 +4,6 @@ import Navbar from "../components/navbar";
 import SectionTitle from "../components/sectionTitle";
 import Footer from "../components/footer";
 import Cta from "../components/cta";
-import PopupWidget from "../components/popupWidget";
 
 export default function Quote() {
     const [formData, setFormData] = useState({
@@ -219,7 +218,7 @@ export default function Quote() {
             <Footer />
 
             {/* Popup Widget */}
-            <PopupWidget />
+        
         </>
     );
 }
